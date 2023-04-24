@@ -1,0 +1,43 @@
+{
+  "name": "create-selendra-app",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "Selendra",
+  "bin": {
+    "create-vite": "index.js",
+    "cva": "index.js"
+  },
+  "files": [
+    "index.js",
+    "templates/*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selendra/create-selendra-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/selendra/create-selendra-app/issues"
+  },
+  "homepage": "https://github.com/selendra/create-selendra-app/tree/main/#readme",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "unbuild": "^1.2.1"
+  }
+}
